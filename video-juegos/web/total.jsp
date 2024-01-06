@@ -103,7 +103,7 @@
         }
     } catch (ClassNotFoundException e) {
         e.printStackTrace();
-        out.println("Error: MySQL JDBC driver not found");
+        out.println("Error: MySQL JDBC driver no encontrado");
     } catch (SQLException e) {
         e.printStackTrace();
         out.println("Error: " + e.getMessage());
