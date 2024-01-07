@@ -57,10 +57,14 @@
 
 <div class="login-container">
     <h2>Login</h2>
-    <form action="comprueba_sesion.java" id="loginForm">
-        <input type="text" class="input-field" id="username" placeholder="Usuario" required>
-        <input type="password" class="input-field" id="password" placeholder="Contraseña" required>
-        <button type="submit" class="login-button" onclick="login()">Iniciar sesión</button>
+    <form action="login" id="loginForm" method="post">
+        <label for="username">Usuario:</label>
+        <input type="text" class="input-field" id="username" name="username" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" class="input-field" id="password" name="password" required>
+
+        <input type="submit" class="login-button" value="Iniciar Sesión">
     </form>
     <p>No tienes cuenta? <a href="registro.html" class="register-link">Regístrate</a></p>
 </div>
