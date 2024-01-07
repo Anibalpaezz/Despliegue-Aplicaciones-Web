@@ -939,3 +939,9 @@
 0:0:0:0:0:0:0:1 - - [07/Jan/2024:18:46:18 +0100] "POST /tienda-GAME/login HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [07/Jan/2024:18:46:18 +0100] "GET /tienda-GAME/user.jsp HTTP/1.1" 200 1153
 0:0:0:0:0:0:0:1 - - [07/Jan/2024:18:46:19 +0100] "GET /tienda-GAME/fotos/2.png HTTP/1.1" 304 -
+127.0.0.1 - - [07/Jan/2024:18:50:01 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - nico [07/Jan/2024:18:50:01 +0100] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [07/Jan/2024:18:50:01 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - nico [07/Jan/2024:18:50:01 +0100] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [07/Jan/2024:18:50:01 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - nico [07/Jan/2024:18:50:01 +0100] "GET /manager/text/ HTTP/1.1" 200 39
