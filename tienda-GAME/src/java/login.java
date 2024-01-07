@@ -31,7 +31,7 @@ public class login extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
 
             String url = "jdbc:mysql://localhost:3306/tienda_juegos";
-            String dbUsername = "nico";
+            String dbUsername = "anibal";
             String dbPassword = "nico";
             conn = DriverManager.getConnection(url, dbUsername, dbPassword);
 
