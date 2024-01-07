@@ -58,3 +58,9 @@
 127.0.0.1 - - [06/Jan/2024:19:13:07 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - nico [06/Jan/2024:19:13:07 +0100] "GET /manager/text/ HTTP/1.1" 200 39
 0:0:0:0:0:0:0:1 - - [06/Jan/2024:19:17:21 +0100] "GET /video-juegos/inicio_sesion.html HTTP/1.1" 304 -
+127.0.0.1 - - [06/Jan/2024:19:52:57 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - nico [06/Jan/2024:19:52:57 +0100] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [06/Jan/2024:19:52:57 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - nico [06/Jan/2024:19:52:57 +0100] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [06/Jan/2024:19:52:57 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - nico [06/Jan/2024:19:52:57 +0100] "GET /manager/text/ HTTP/1.1" 200 39
