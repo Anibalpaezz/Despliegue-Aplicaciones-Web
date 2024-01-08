@@ -15,56 +15,53 @@ public class compra extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // Lógica para procesar la compra
-        String[] itemsId = request.getParameterValues("seleccion[]");
+        String[] seleccion = request.getParameterValues("seleccion[]");
+        String paginaOrigen = request.getParameter("paginaOrigen");
 
-        // Puedes realizar aquí las acciones necesarias, como registrar la compra en la base de datos, etc.
+        if (seleccion != null && paginaOrigen != null && paginaOrigen.equals("juegos") || paginaOrigen.equals("consolas")) {
+            Connection conn = null;
+            PreparedStatement pstmt = null;
 
-        // Actualizar la base de datos restando 1 en los campos correspondientes
-        actualizarBaseDeDatos(itemsId);
-
-        // Muestra un mensaje simple en la respuesta
-        response.setContentType("text/html;charset=UTF-8");
-        response.getWriter().println("<html><head><title>Compra Realizada</title></head><body>");
-        response.getWriter().println("<h2>Compra realizada con éxito</h2>");
-        response.getWriter().println("<button onclick=\"cerrarSesion()\">Cerrar Sesión</button>");
-        response.getWriter().println("<script>");
-        response.getWriter().println("function cerrarSesion() { window.location.href = '/ruta/cerrarSesion.jsp'; }");
-        response.getWriter().println("</script>");
-        response.getWriter().println("</body></html>");
-    }
-
-    private void actualizarBaseDeDatos(String[] itemsId) {
-        Connection conn = null;
-        PreparedStatement stmt = null;
-
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3306/tienda_juegos";
-            String user = "anibal";
-            String password = "nico";
-            conn = DriverManager.getConnection(url, user, password);
-
-            // Actualizar la base de datos restando 1 en los campos correspondientes
-            for (String itemId : itemsId) {
-                String updateQuery = "UPDATE productos SET cantidad_disponible = cantidad_disponible - 1 WHERE nombre_producto = ?";
-                stmt = conn.prepareStatement(updateQuery);
-                stmt.setString(1, itemId);
-                stmt.executeUpdate();
-            }
-        } catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace();
-        } finally {
             try {
-                if (stmt != null) {
-                    stmt.close();
+                Class.forName("com.mysql.jdbc.Driver");
+                String url = "jdbc:mysql://localhost:3306/tienda_juegos";
+                String user = "anibal";
+                String password = "nico";
+                conn = DriverManager.getConnection(url, user, password);
+
+                // Actualizar la base de datos para los juegos seleccionados
+                String updateQuery = "UPDATE" + paginaOrigen + "SET unidades_disponibles = unidades_disponibles - 1 WHERE nombre_juego = ?";
+                pstmt = conn.prepareStatement(updateQuery);
+
+                for (String juego : seleccion) {
+                    pstmt.setString(1, juego);
+                    pstmt.executeUpdate();
                 }
-                if (conn != null) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
+
+                response.getWriter().println("Compra realizada con éxito");
+                response.getWriter().println(paginaOrigen);
+
+            } catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();
+                response.getWriter().println("Error: " + e.getMessage());
+            } finally {
+                try {
+                    if (pstmt != null) {
+                        pstmt.close();
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    if (conn != null) {
+                        conn.close();
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
+        } else {
+            response.getWriter().println("Error: Parámetros incorrectos");
         }
     }
 }

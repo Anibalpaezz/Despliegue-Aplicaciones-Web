@@ -68,20 +68,21 @@
         while (rs.next()) {
 %>
                 <tr>
-                    <td><%= rs.getString("nombre_consola") %></td>
+                    <td><%= rs.getString("nombre") %></td>
                     <td><%= rs.getFloat("frecuencia_cpu") %></td>
                     <td><%= rs.getFloat("frecuencia_gpu") %></td>
                     <td><%= rs.getString("compania") %></td>
                     <td><%= rs.getDouble("precio") %></td>
                     <td><%= rs.getInt("unidades_disponibles") %></td>
                     <td><%= rs.getInt("generacion") %></td>
-                    <td><input type="checkbox" name="seleccion[]" value="<%= rs.getString("nombre_consola") %>"></td>
+                    <td><input type="checkbox" name="seleccion[]" value="<%= rs.getString("nombre") %>"></td>
                 </tr>
 <%
         }
 %>
             </table>
             <button type="submit" class="comprar-button">Comprar Seleccionados</button>
+            <input type="hidden" name="paginaOrigen" value="consolas">
         </form>
 <%
     } catch (ClassNotFoundException e) {
