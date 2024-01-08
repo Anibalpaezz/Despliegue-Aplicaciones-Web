@@ -921,3 +921,11 @@
 127.0.0.1 - nico [08/Jan/2024:10:35:35 +0100] "GET /manager/text/ HTTP/1.1" 200 44
 0:0:0:0:0:0:0:1 - - [08/Jan/2024:10:35:36 +0100] "GET /tienda-GAME/compra?seleccion%5B%5D=Halo+Infinite&seleccion%5B%5D=Forza+Horizon+5&seleccion%5B%5D=Fable&seleccion%5B%5D=Bloodborne&seleccion%5B%5D=Forza+Horizon+5 HTTP/1.1" 200 96
 0:0:0:0:0:0:0:1 - - [08/Jan/2024:10:35:51 +0100] "GET /tienda-GAME/juegos.jsp HTTP/1.1" 200 10992
+127.0.0.1 - - [08/Jan/2024:10:40:05 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - nico [08/Jan/2024:10:40:05 +0100] "GET /manager/text/ HTTP/1.1" 200 44
+127.0.0.1 - - [08/Jan/2024:10:40:05 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - nico [08/Jan/2024:10:40:05 +0100] "GET /manager/text/ HTTP/1.1" 200 44
+127.0.0.1 - - [08/Jan/2024:10:40:05 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - nico [08/Jan/2024:10:40:05 +0100] "GET /manager/text/ HTTP/1.1" 200 44
+127.0.0.1 - - [08/Jan/2024:10:40:06 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - nico [08/Jan/2024:10:40:06 +0100] "GET /manager/text/ HTTP/1.1" 200 44
