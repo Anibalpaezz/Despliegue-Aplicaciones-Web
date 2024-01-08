@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Admin Page</title>
+    <title>GAME</title>
     <style>
         body {
             margin: 0;
@@ -41,11 +41,9 @@
     <a href="todo.jsp">Todo</a>
     <a href="index.html">Cerrar sesion</a>
 </nav>
+    
 
-<!-- Contenido específico para administradores -->
-<h2 style="color: white; text-align: center;">Bienvenido, Administrador</h2>
-
-<!-- Aquí puedes agregar más contenido específico para administradores -->
+<h2 style="color: white; text-align: center;">Bienvenido, <%=session.getAttribute("nombre")%></h2>
 
 </body>
 </html>

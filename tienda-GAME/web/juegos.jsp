@@ -31,19 +31,15 @@
     ResultSet rs = null;
 
     try {
-        // Establecer la conexión con la base de datos
         Class.forName("com.mysql.jdbc.Driver");
         String url = "jdbc:mysql://localhost:3306/tienda_juegos";
         String user = "anibal";
         String password = "nico";
         conn = DriverManager.getConnection(url, user, password);
 
-        // Consultar el catálogo de juegos
         String query = "SELECT * FROM juegos";
         stmt = conn.createStatement();
         rs = stmt.executeQuery(query);
-
-        // Mostrar la tabla con el catálogo de juegos
 %>
         <h1>Catálogo de Juegos</h1>
         <table>
@@ -64,7 +60,8 @@
                 <td><%= rs.getString("genero") %></td>
                 <td><%= rs.getInt("puntuacion_metacritic") %></td>
                 <td><%= rs.getDouble("precio") %></td>
-                <td><%= rs.getInt("unidades_disponibles") %></td>
+                <td><%= rs.getInt("unidades_disponibles") %></td><td><a href="compra?juegoID=<%= rs.getString("nombre_juego") %>"><button>Comprar</button></a></td>
+                
             </tr>
 <%
         }
@@ -73,10 +70,8 @@
 <%
     } catch (SQLException | ClassNotFoundException e) {
         e.printStackTrace();
-        // Print the error message to the page for debugging purposes
         out.println("Error: " + e.getMessage());
     } finally {
-        // Cerrar recursos
         try { if (rs != null) rs.close(); } catch (SQLException e) { e.printStackTrace(); }
         try { if (stmt != null) stmt.close(); } catch (SQLException e) { e.printStackTrace(); }
         try { if (conn != null) conn.close(); } catch (SQLException e) { e.printStackTrace(); }

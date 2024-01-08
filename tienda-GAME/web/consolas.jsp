@@ -51,6 +51,7 @@
                 <th>Precio</th>
                 <th>Unidades Disponibles</th>
                 <th>Generación</th>
+                <th>Comprar</th>
             </tr>
 <%
         while (rs.next()) {
@@ -63,6 +64,7 @@
                 <td><%= rs.getDouble("precio") %></td>
                 <td><%= rs.getInt("unidades_disponibles") %></td>
                 <td><%= rs.getInt("generacion") %></td>
+                <td><a href="compra?consolaId=<%= rs.getString("nombre_consola") %>"><button>Comprar</button></a></td>
             </tr>
 <%
         }

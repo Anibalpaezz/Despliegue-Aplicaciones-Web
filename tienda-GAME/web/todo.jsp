@@ -38,12 +38,9 @@
         String password = "nico";
         conn = DriverManager.getConnection(url, user, password);
 
-        // Query the catalog of games
         String queryJuegos = "SELECT * FROM juegos";
         stmt = conn.createStatement();
         rsJuegos = stmt.executeQuery(queryJuegos);
-
-        // Mostrar la tabla con el catálogo de juegos
 %>
         <h1>Catálogo Completo</h1>
         <h2>Juegos</h2>
@@ -84,7 +81,6 @@
                 <th>Generación</th>
             </tr>
 <%
-        // Query the catalog of consoles
         String queryConsolas = "SELECT * FROM consolas";
         rsConsolas = stmt.executeQuery(queryConsolas);
 
@@ -108,7 +104,6 @@
         e.printStackTrace();
         out.println("Error: " + e.getMessage());
     } finally {
-        // Close resources in a controlled manner
         try { if (rsJuegos != null) rsJuegos.close(); } catch (SQLException e) { e.printStackTrace(); }
         try { if (rsConsolas != null) rsConsolas.close(); } catch (SQLException e) { e.printStackTrace(); }
         try { if (stmt != null) stmt.close(); } catch (SQLException e) { e.printStackTrace(); }

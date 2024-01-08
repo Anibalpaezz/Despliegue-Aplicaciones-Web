@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("/login")
 public class login extends HttpServlet {
@@ -45,8 +46,14 @@ public class login extends HttpServlet {
                 boolean isAdmin = rs.getBoolean("es_administrador");
 
                 if (isAdmin) {
+                    String user = username.substring(0, 1).toUpperCase() + username.substring(1).toLowerCase();
+                    HttpSession session = request.getSession(true);
+                    session.setAttribute("nombre", user);
                     response.sendRedirect("admin.jsp");
                 } else {
+                    String user = username.substring(0, 1).toUpperCase() + username.substring(1).toLowerCase();
+                    HttpSession session = request.getSession(true);
+                    session.setAttribute("nombre", user);
                     response.sendRedirect("user.jsp");
                 }
             } else {

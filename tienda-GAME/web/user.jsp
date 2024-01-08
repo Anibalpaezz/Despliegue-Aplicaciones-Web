@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>User Page</title>
+    <title>GAME</title>
     <style>
         body {
             margin: 0;
@@ -42,10 +42,8 @@
     <a href="index.html">Cerrar sesion</a>
 </nav>
 
-<!-- Contenido específico para usuarios -->
-<h2 style="color: white; text-align: center;">Bienvenido, Usuario Normal</h2>
+<h2 style="color: white; text-align: center;">Bienvenido, <%=session.getAttribute("nombre")%></h2>
 
-<!-- Aquí puedes agregar más contenido específico para usuarios -->
 
 </body>
 </html>
