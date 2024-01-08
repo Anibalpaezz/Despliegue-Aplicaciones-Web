@@ -677,3 +677,308 @@
  java.base/java.lang.Thread.run(Thread.java:1623)
 08-Jan-2024 10:40:06.982 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 08-Jan-2024 10:40:07.000 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:55:14.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+08-Jan-2024 17:55:14.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+08-Jan-2024 17:55:14.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+08-Jan-2024 17:55:14.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-Jan-2024 17:55:14.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Jan-2024 17:55:14.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Jan-2024 17:55:14.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+08-Jan-2024 17:55:14.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.1+12-LTS-29
+08-Jan-2024 17:55:14.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Jan-2024 17:55:14.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:55:14.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\logging.properties
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:55:14.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:55:14.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\temp
+08-Jan-2024 17:55:14.963 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Users\aniba\AppData\Local\Microsoft\WindowsApps;C:\Users\aniba\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\aniba\AppData\Local\GitHubDesktop\bin;.]
+08-Jan-2024 17:55:15.305 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:55:15.327 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [547] milliseconds
+08-Jan-2024 17:55:15.372 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Jan-2024 17:55:15.372 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+08-Jan-2024 17:55:15.382 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml]
+08-Jan-2024 17:55:15.394 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/tienda-GAME] in deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has been ignored
+08-Jan-2024 17:55:15.419 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:691)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1897)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:584)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1619)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@3224a577]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4575)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [F:\Despliegue-Aplicaciones-Web\tienda-GAME\build\web] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 39 more
+08-Jan-2024 17:55:15.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has finished in [75] ms
+08-Jan-2024 17:55:15.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml]
+08-Jan-2024 17:55:15.459 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/tienda-videojuegos] in deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml] has been ignored
+08-Jan-2024 17:55:15.459 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\home\apg\Desktop\Despliegue-Aplicaciones-Web\tienda-videojuegos\build\web] inside the host appBase has been specified, and will be ignored
+08-Jan-2024 17:55:15.465 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:691)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1897)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:584)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1619)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@895e367]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4575)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\tienda-videojuegos] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 39 more
+08-Jan-2024 17:55:15.520 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml] has finished in [61] ms
+08-Jan-2024 17:55:15.520 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\docs]
+08-Jan-2024 17:55:15.792 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\docs] has finished in [272] ms
+08-Jan-2024 17:55:15.792 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\examples]
+08-Jan-2024 17:55:16.426 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\examples] has finished in [634] ms
+08-Jan-2024 17:55:16.428 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\host-manager]
+08-Jan-2024 17:55:16.470 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\host-manager] has finished in [42] ms
+08-Jan-2024 17:55:16.470 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\manager]
+08-Jan-2024 17:55:16.515 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\manager] has finished in [44] ms
+08-Jan-2024 17:55:16.515 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\ROOT]
+08-Jan-2024 17:55:16.555 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\ROOT] has finished in [40] ms
+08-Jan-2024 17:55:16.560 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:55:16.586 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1257] milliseconds
+08-Jan-2024 17:56:42.431 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Jan-2024 17:56:42.431 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:56:42.433 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Jan-2024 17:56:42.448 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:56:42.461 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:56:45.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+08-Jan-2024 17:56:45.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+08-Jan-2024 17:56:45.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+08-Jan-2024 17:56:45.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-Jan-2024 17:56:45.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Jan-2024 17:56:45.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Jan-2024 17:56:45.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+08-Jan-2024 17:56:45.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.1+12-LTS-29
+08-Jan-2024 17:56:45.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Jan-2024 17:56:45.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:56:45.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:56:45.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\logging.properties
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:56:45.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\temp
+08-Jan-2024 17:56:45.569 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Users\aniba\AppData\Local\Microsoft\WindowsApps;C:\Users\aniba\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\aniba\AppData\Local\GitHubDesktop\bin;.]
+08-Jan-2024 17:56:45.840 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:56:45.858 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [442] milliseconds
+08-Jan-2024 17:56:45.895 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Jan-2024 17:56:45.895 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+08-Jan-2024 17:56:45.902 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml]
+08-Jan-2024 17:56:45.913 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/tienda-GAME] in deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has been ignored
+08-Jan-2024 17:56:45.932 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:691)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1897)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:584)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1619)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@352ff4da]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4575)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [F:\Despliegue-Aplicaciones-Web\tienda-GAME\build\web] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 39 more
+08-Jan-2024 17:56:45.945 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has finished in [43] ms
+08-Jan-2024 17:56:45.945 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml]
+08-Jan-2024 17:56:45.946 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/tienda-videojuegos] in deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml] has been ignored
+08-Jan-2024 17:56:45.947 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\home\apg\Desktop\Despliegue-Aplicaciones-Web\tienda-videojuegos\build\web] inside the host appBase has been specified, and will be ignored
+08-Jan-2024 17:56:45.950 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:691)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1897)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:584)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1619)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@7a3793c7]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4575)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\tienda-videojuegos] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 39 more
+08-Jan-2024 17:56:46.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml] has finished in [58] ms
+08-Jan-2024 17:56:46.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\docs]
+08-Jan-2024 17:56:46.222 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\docs] has finished in [218] ms
+08-Jan-2024 17:56:46.222 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\examples]
+08-Jan-2024 17:56:46.596 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\examples] has finished in [374] ms
+08-Jan-2024 17:56:46.596 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\host-manager]
+08-Jan-2024 17:56:46.627 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\host-manager] has finished in [31] ms
+08-Jan-2024 17:56:46.627 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\manager]
+08-Jan-2024 17:56:46.656 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\manager] has finished in [29] ms
+08-Jan-2024 17:56:46.656 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\ROOT]
+08-Jan-2024 17:56:46.679 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\ROOT] has finished in [23] ms
+08-Jan-2024 17:56:46.682 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:56:46.701 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [840] milliseconds
