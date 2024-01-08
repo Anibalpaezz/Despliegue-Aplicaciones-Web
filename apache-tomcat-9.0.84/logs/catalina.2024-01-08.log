@@ -982,3 +982,387 @@
 08-Jan-2024 17:56:46.679 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\ROOT] has finished in [23] ms
 08-Jan-2024 17:56:46.682 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 08-Jan-2024 17:56:46.701 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [840] milliseconds
+08-Jan-2024 17:58:09.445 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Jan-2024 17:58:09.446 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:58:09.448 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Jan-2024 17:58:09.464 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:58:09.472 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:58:12.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+08-Jan-2024 17:58:12.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+08-Jan-2024 17:58:12.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+08-Jan-2024 17:58:12.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-Jan-2024 17:58:12.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Jan-2024 17:58:12.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Jan-2024 17:58:12.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+08-Jan-2024 17:58:12.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.1+12-LTS-29
+08-Jan-2024 17:58:12.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Jan-2024 17:58:12.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:58:12.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:58:12.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Jan-2024 17:58:12.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Jan-2024 17:58:12.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Jan-2024 17:58:12.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Jan-2024 17:58:12.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Jan-2024 17:58:12.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\logging.properties
+08-Jan-2024 17:58:12.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Jan-2024 17:58:12.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Jan-2024 17:58:12.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Jan-2024 17:58:12.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Jan-2024 17:58:12.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:58:12.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 17:58:12.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\temp
+08-Jan-2024 17:58:12.570 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Users\aniba\AppData\Local\Microsoft\WindowsApps;C:\Users\aniba\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\aniba\AppData\Local\GitHubDesktop\bin;.]
+08-Jan-2024 17:58:12.854 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:58:12.870 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [455] milliseconds
+08-Jan-2024 17:58:12.901 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Jan-2024 17:58:12.901 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+08-Jan-2024 17:58:12.909 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml]
+08-Jan-2024 17:58:12.919 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/tienda-GAME] in deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has been ignored
+08-Jan-2024 17:58:12.939 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:691)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1897)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:584)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1619)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@4e928fbf]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4575)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [F:\Despliegue-Aplicaciones-Web\tienda-GAME\build\web] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 39 more
+08-Jan-2024 17:58:12.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has finished in [63] ms
+08-Jan-2024 17:58:12.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml]
+08-Jan-2024 17:58:12.974 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/tienda-videojuegos] in deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml] has been ignored
+08-Jan-2024 17:58:12.975 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\home\apg\Desktop\Despliegue-Aplicaciones-Web\tienda-videojuegos\build\web] inside the host appBase has been specified, and will be ignored
+08-Jan-2024 17:58:12.980 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:691)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1897)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:584)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1619)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@1b266842]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4575)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\tienda-videojuegos] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 39 more
+08-Jan-2024 17:58:13.040 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml] has finished in [68] ms
+08-Jan-2024 17:58:13.041 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\docs]
+08-Jan-2024 17:58:13.248 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\docs] has finished in [207] ms
+08-Jan-2024 17:58:13.248 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\examples]
+08-Jan-2024 17:58:13.638 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\examples] has finished in [390] ms
+08-Jan-2024 17:58:13.638 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\host-manager]
+08-Jan-2024 17:58:13.672 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\host-manager] has finished in [34] ms
+08-Jan-2024 17:58:13.672 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\manager]
+08-Jan-2024 17:58:13.708 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\manager] has finished in [36] ms
+08-Jan-2024 17:58:13.708 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\ROOT]
+08-Jan-2024 17:58:13.731 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\ROOT] has finished in [23] ms
+08-Jan-2024 17:58:13.734 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 17:58:13.753 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [881] milliseconds
+08-Jan-2024 18:00:29.239 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Jan-2024 18:00:29.240 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 18:00:29.242 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Jan-2024 18:00:29.259 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 18:00:29.271 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 18:05:37.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+08-Jan-2024 18:05:37.434 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+08-Jan-2024 18:05:37.434 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+08-Jan-2024 18:05:37.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-Jan-2024 18:05:37.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Jan-2024 18:05:37.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Jan-2024 18:05:37.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+08-Jan-2024 18:05:37.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.1+12-LTS-29
+08-Jan-2024 18:05:37.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Jan-2024 18:05:37.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 18:05:37.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\logging.properties
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 18:05:37.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84
+08-Jan-2024 18:05:37.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\temp
+08-Jan-2024 18:05:37.448 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Users\aniba\AppData\Local\Microsoft\WindowsApps;C:\Users\aniba\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\aniba\AppData\Local\GitHubDesktop\bin;.]
+08-Jan-2024 18:05:37.731 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 18:05:37.747 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [457] milliseconds
+08-Jan-2024 18:05:37.782 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Jan-2024 18:05:37.783 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+08-Jan-2024 18:05:37.791 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml]
+08-Jan-2024 18:05:37.801 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/tienda-GAME] in deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has been ignored
+08-Jan-2024 18:05:37.821 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:691)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1897)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:584)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1619)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@4e928fbf]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4575)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [F:\Despliegue-Aplicaciones-Web\tienda-GAME\build\web] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 39 more
+08-Jan-2024 18:05:37.860 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has finished in [68] ms
+08-Jan-2024 18:05:37.860 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml]
+08-Jan-2024 18:05:37.861 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/tienda-videojuegos] in deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml] has been ignored
+08-Jan-2024 18:05:37.861 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\home\apg\Desktop\Despliegue-Aplicaciones-Web\tienda-videojuegos\build\web] inside the host appBase has been specified, and will be ignored
+08-Jan-2024 18:05:37.866 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:691)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1897)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:584)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1619)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:318)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@463fd068]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4575)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\tienda-videojuegos] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 39 more
+08-Jan-2024 18:05:37.922 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-videojuegos.xml] has finished in [62] ms
+08-Jan-2024 18:05:37.923 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\docs]
+08-Jan-2024 18:05:38.144 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\docs] has finished in [220] ms
+08-Jan-2024 18:05:38.144 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\examples]
+08-Jan-2024 18:05:38.508 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\examples] has finished in [364] ms
+08-Jan-2024 18:05:38.508 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\host-manager]
+08-Jan-2024 18:05:38.538 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\host-manager] has finished in [30] ms
+08-Jan-2024 18:05:38.539 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\manager]
+08-Jan-2024 18:05:38.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\manager] has finished in [30] ms
+08-Jan-2024 18:05:38.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\ROOT]
+08-Jan-2024 18:05:38.591 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\ROOT] has finished in [21] ms
+08-Jan-2024 18:05:38.593 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Jan-2024 18:05:38.611 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [862] milliseconds
+08-Jan-2024 18:10:29.409 INFO [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\prueba-juego.xml]
+08-Jan-2024 18:10:29.410 WARNING [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/prueba-juego] in deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\prueba-juego.xml] has been ignored
+08-Jan-2024 18:10:29.441 INFO [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\prueba-juego.xml] has finished in [32] ms
+08-Jan-2024 18:10:29.443 INFO [http-nio-8080-exec-8] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/prueba-juego]] after start() had already been called. The second call will be ignored.
+08-Jan-2024 18:11:19.960 INFO [http-nio-8080-exec-12] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:11:20.372 INFO [http-nio-8080-exec-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:11:20.374 INFO [http-nio-8080-exec-12] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:14:31.303 INFO [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tienda-GAME]
+08-Jan-2024 18:14:31.325 INFO [http-nio-8080-exec-21] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml]
+08-Jan-2024 18:14:31.326 WARNING [http-nio-8080-exec-21] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/tienda-GAME] in deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has been ignored
+08-Jan-2024 18:14:31.674 INFO [http-nio-8080-exec-21] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:14:31.677 INFO [http-nio-8080-exec-21] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\aniba\Desktop\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has finished in [351] ms
+08-Jan-2024 18:14:31.678 INFO [http-nio-8080-exec-22] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tienda-GAME]] after start() had already been called. The second call will be ignored.
+08-Jan-2024 18:14:31.995 INFO [http-nio-8080-exec-25] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/tienda-GAME] has started
+08-Jan-2024 18:14:32.338 INFO [http-nio-8080-exec-25] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:14:32.340 INFO [http-nio-8080-exec-25] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/tienda-GAME] is completed
+08-Jan-2024 18:14:32.359 INFO [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:14:32.686 INFO [http-nio-8080-exec-11] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:14:32.687 INFO [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:15:03.681 WARNING [http-nio-8080-exec-23] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:15:04.047 INFO [http-nio-8080-exec-23] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:15:04.382 WARNING [http-nio-8080-exec-26] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:15:04.719 INFO [http-nio-8080-exec-26] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:15:05.063 WARNING [http-nio-8080-exec-25] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:15:05.403 INFO [http-nio-8080-exec-25] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:15:09.190 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/prueba-juego]
+08-Jan-2024 18:15:09.190 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:15:09.202 WARNING [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:15:09.494 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:15:09.495 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:15:15.348 INFO [http-nio-8080-exec-23] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:15:15.360 WARNING [http-nio-8080-exec-23] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:15:15.657 INFO [http-nio-8080-exec-23] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:15:15.659 INFO [http-nio-8080-exec-23] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:15:39.595 INFO [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:15:39.614 WARNING [http-nio-8080-exec-27] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:15:40.009 INFO [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:15:40.011 INFO [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:15:40.327 INFO [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:15:40.340 WARNING [http-nio-8080-exec-28] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:15:40.664 INFO [http-nio-8080-exec-28] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:15:40.667 INFO [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:15:48.654 INFO [http-nio-8080-exec-31] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:15:48.667 WARNING [http-nio-8080-exec-31] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:15:48.991 INFO [http-nio-8080-exec-31] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:15:48.993 INFO [http-nio-8080-exec-31] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:15:49.308 INFO [http-nio-8080-exec-22] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:15:49.320 WARNING [http-nio-8080-exec-22] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:15:49.614 INFO [http-nio-8080-exec-22] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:15:49.615 INFO [http-nio-8080-exec-22] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:15:51.979 INFO [http-nio-8080-exec-23] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:15:51.991 WARNING [http-nio-8080-exec-23] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:15:52.276 INFO [http-nio-8080-exec-23] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:15:52.278 INFO [http-nio-8080-exec-23] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:16:03.335 INFO [http-nio-8080-exec-21] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:16:03.348 WARNING [http-nio-8080-exec-21] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:16:03.641 INFO [http-nio-8080-exec-21] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:16:03.643 INFO [http-nio-8080-exec-21] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:16:11.737 INFO [http-nio-8080-exec-32] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:16:11.750 WARNING [http-nio-8080-exec-32] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:16:12.111 INFO [http-nio-8080-exec-32] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:16:12.113 INFO [http-nio-8080-exec-32] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:16:39.778 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:16:39.792 WARNING [http-nio-8080-exec-36] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:16:40.085 INFO [http-nio-8080-exec-36] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:16:40.087 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:16:56.345 INFO [http-nio-8080-exec-21] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:16:56.356 WARNING [http-nio-8080-exec-21] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:16:56.648 INFO [http-nio-8080-exec-21] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:16:56.650 INFO [http-nio-8080-exec-21] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
+08-Jan-2024 18:17:00.678 INFO [http-nio-8080-exec-32] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] has started
+08-Jan-2024 18:17:00.693 WARNING [http-nio-8080-exec-32] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+08-Jan-2024 18:17:00.995 INFO [http-nio-8080-exec-32] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jan-2024 18:17:00.997 INFO [http-nio-8080-exec-32] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/prueba-juego] is completed
