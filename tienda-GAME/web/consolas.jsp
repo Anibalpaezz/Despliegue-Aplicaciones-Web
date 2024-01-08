@@ -20,6 +20,16 @@
             background-color: #333;
             color: #fff;
         }
+
+        .comprar-button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -42,34 +52,37 @@
         rs = stmt.executeQuery(query);
 %>
         <h1>Catálogo de Consolas</h1>
-        <table>
-            <tr>
-                <th>Nombre de la Consola</th>
-                <th>Potencia de la CPU</th>
-                <th>Potencia de la GPU</th>
-                <th>Compañía</th>
-                <th>Precio</th>
-                <th>Unidades Disponibles</th>
-                <th>Generación</th>
-                <th>Comprar</th>
-            </tr>
+        <form action="compra" method="get">
+            <table>
+                <tr>
+                    <th>Nombre de la Consola</th>
+                    <th>Potencia de la CPU</th>
+                    <th>Potencia de la GPU</th>
+                    <th>Compañía</th>
+                    <th>Precio</th>
+                    <th>Unidades Disponibles</th>
+                    <th>Generación</th>
+                    <th>Comprar</th>
+                </tr>
 <%
         while (rs.next()) {
 %>
-            <tr>
-                <td><%= rs.getString("nombre_consola") %></td>
-                <td><%= rs.getFloat("frecuencia_cpu") %></td>
-                <td><%= rs.getFloat("frecuencia_gpu") %></td>
-                <td><%= rs.getString("compania") %></td>
-                <td><%= rs.getDouble("precio") %></td>
-                <td><%= rs.getInt("unidades_disponibles") %></td>
-                <td><%= rs.getInt("generacion") %></td>
-                <td><a href="compra?consolaId=<%= rs.getString("nombre_consola") %>"><button>Comprar</button></a></td>
-            </tr>
+                <tr>
+                    <td><%= rs.getString("nombre_consola") %></td>
+                    <td><%= rs.getFloat("frecuencia_cpu") %></td>
+                    <td><%= rs.getFloat("frecuencia_gpu") %></td>
+                    <td><%= rs.getString("compania") %></td>
+                    <td><%= rs.getDouble("precio") %></td>
+                    <td><%= rs.getInt("unidades_disponibles") %></td>
+                    <td><%= rs.getInt("generacion") %></td>
+                    <td><input type="checkbox" name="seleccion[]" value="<%= rs.getString("nombre_consola") %>"></td>
+                </tr>
 <%
         }
 %>
-        </table>
+            </table>
+            <button type="submit" class="comprar-button">Comprar Seleccionados</button>
+        </form>
 <%
     } catch (ClassNotFoundException e) {
         e.printStackTrace();

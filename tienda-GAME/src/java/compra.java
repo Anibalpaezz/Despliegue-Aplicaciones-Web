@@ -12,13 +12,15 @@ public class compra extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         // Lógica para procesar la compra
-        String consolaId = request.getParameter("consolaId");
+        String[] consolaId = request.getParameterValues("seleccion[]");
 
         // Puedes realizar aquí las acciones necesarias, como registrar la compra en la base de datos, etc.
 
         // Muestra un mensaje simple en la respuesta
-        response.getWriter().print("Hola desde ComprarServlet");
-        response.getWriter().print(consolaId);
+        response.getWriter().println("Compra realizada con exito");
+        for(String id : consolaId){
+            response.getWriter().println(id);
+        }
         
     }
 }
