@@ -30,7 +30,7 @@ public class compra extends HttpServlet {
                 conn = DriverManager.getConnection(url, user, password);
 
                 // Actualizar la base de datos para los juegos seleccionados
-                String updateQuery = "UPDATE" + paginaOrigen + "SET unidades_disponibles = unidades_disponibles - 1 WHERE nombre_juego = ?";
+                String updateQuery = "UPDATE" + paginaOrigen + "SET unidades_disponibles = unidades_disponibles - 1 WHERE nombre = ?";
                 pstmt = conn.prepareStatement(updateQuery);
 
                 for (String juego : seleccion) {
