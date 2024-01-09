@@ -724,3 +724,8 @@
 		at java.base/java.lang.Thread.run(Thread.java:1623)
 09-Jan-2024 09:28:13.134 INFO [http-nio-8080-exec-85] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
 09-Jan-2024 09:28:13.144 INFO [http-nio-8080-exec-85] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:55:57.886 INFO [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+09-Jan-2024 09:55:57.978 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-Jan-2024 09:55:58.004 INFO [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+09-Jan-2024 09:55:58.849 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-Jan-2024 09:55:59.451 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

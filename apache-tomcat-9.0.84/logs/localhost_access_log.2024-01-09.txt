@@ -567,3 +567,15 @@
 127.0.0.1 - - [09/Jan/2024:09:50:09 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - anibal [09/Jan/2024:09:50:09 +0100] "GET /manager/text/ HTTP/1.1" 200 44
 0:0:0:0:0:0:0:1 - - [09/Jan/2024:09:51:55 +0100] "GET /tienda-GAME/admin.jsp HTTP/1.1" 200 1059
+127.0.0.1 - - [09/Jan/2024:09:55:54 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - anibal [09/Jan/2024:09:55:54 +0100] "GET /manager/text/ HTTP/1.1" 200 44
+127.0.0.1 - - [09/Jan/2024:09:55:54 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - anibal [09/Jan/2024:09:55:54 +0100] "GET /manager/text/ HTTP/1.1" 200 44
+127.0.0.1 - - [09/Jan/2024:09:55:54 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - anibal [09/Jan/2024:09:55:54 +0100] "GET /manager/text/ HTTP/1.1" 200 44
+127.0.0.1 - - [09/Jan/2024:09:55:55 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - anibal [09/Jan/2024:09:55:55 +0100] "GET /manager/text/ HTTP/1.1" 200 44
+127.0.0.1 - - [09/Jan/2024:09:55:56 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - anibal [09/Jan/2024:09:55:56 +0100] "GET /manager/text/ HTTP/1.1" 200 44
+127.0.0.1 - - [09/Jan/2024:09:55:57 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - anibal [09/Jan/2024:09:55:57 +0100] "GET /manager/text/ HTTP/1.1" 200 44
