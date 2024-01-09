@@ -21,7 +21,7 @@
             color: #fff;
         }
 
-        .comprar-button {
+        .comprar {
             margin-top: 10px;
             padding: 10px;
             background-color: #4caf50;
@@ -78,7 +78,7 @@
                 }
 %>
             </table>
-            <button type="submit" class="comprar-button">Comprar Seleccionados</button>
+            <button type="submit" class="comprar">Comprar Seleccionados</button>
             <input type="hidden" name="paginaOrigen" value="juegos">
         </form>
 <%

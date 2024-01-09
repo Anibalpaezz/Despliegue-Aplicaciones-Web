@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('fotos/1.jpg'); /* Cambia la ruta según la ubicación de tu imagen */
+            background-image: url('fotos/1.jpg');
             background-size: cover;
             font-family: Arial, sans-serif;
         }
@@ -39,6 +39,7 @@
     <a href="juegos.jsp">Juegos</a>
     <a href="consolas.jsp">Consolas</a>
     <a href="todo.jsp">Todo</a>
+    <a href="borrado.jsp">Stock</a>
     <a href="index.html">Cerrar sesion</a>
 </nav>
     

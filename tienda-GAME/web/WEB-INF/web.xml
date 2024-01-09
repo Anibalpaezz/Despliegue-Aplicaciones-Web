@@ -16,6 +16,10 @@
         <servlet-name>compra</servlet-name>
         <servlet-class>compra</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ActualizarDatosServlet</servlet-name>
+        <servlet-class>actualizarDatos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>comprueba_login</servlet-name>
         <url-pattern>/comprueba_login</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>compra</servlet-name>
         <url-pattern>/compra</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizarDatosServlet</servlet-name>
+        <url-pattern>/ActualizarDatosServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
