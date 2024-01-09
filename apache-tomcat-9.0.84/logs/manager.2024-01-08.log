@@ -560,3 +560,94 @@
 08-Jan-2024 18:46:15.843 INFO [http-nio-8080-exec-41] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
 08-Jan-2024 18:46:30.148 INFO [http-nio-8080-exec-35] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
 08-Jan-2024 18:46:30.151 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 18:47:58.728 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 18:47:58.736 INFO [http-nio-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 18:48:06.002 INFO [http-nio-8080-exec-26] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 18:48:06.006 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 18:48:06.007 SEVERE [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: Error reloading [/tienda-GAME]
+	java.lang.IllegalStateException: Context with name [/tienda-GAME] has not yet been started
+		at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3564)
+		at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1057)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:342)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:596)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:670)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+08-Jan-2024 18:48:43.293 INFO [http-nio-8080-exec-52] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 18:48:43.296 INFO [http-nio-8080-exec-45] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/prueba-juego'
+08-Jan-2024 18:48:49.641 INFO [http-nio-8080-exec-52] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 18:48:49.646 INFO [http-nio-8080-exec-48] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/prueba-juego'
+08-Jan-2024 18:50:06.013 INFO [http-nio-8080-exec-60] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 18:50:06.015 INFO [http-nio-8080-exec-54] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 18:50:06.026 INFO [http-nio-8080-exec-62] org.apache.catalina.core.ApplicationContext.log Manager: stop: Stopping web application '/tienda-GAME'
+08-Jan-2024 18:50:06.029 INFO [http-nio-8080-exec-60] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/tienda-GAME'
+08-Jan-2024 18:53:11.590 INFO [http-nio-8080-exec-69] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 18:53:11.591 INFO [http-nio-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 18:53:11.596 INFO [http-nio-8080-exec-72] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tienda-GAME'
+08-Jan-2024 18:53:12.125 INFO [http-nio-8080-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/aniba/AppData/Local/Temp/context14308380263170782970.xml'
+08-Jan-2024 18:53:12.466 INFO [http-nio-8080-exec-68] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/tienda-GAME'
+08-Jan-2024 19:10:01.420 INFO [http-nio-8080-exec-74] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:10:01.424 INFO [http-nio-8080-exec-75] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:12:35.641 INFO [http-nio-8080-exec-86] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:12:35.644 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:13:58.458 INFO [http-nio-8080-exec-77] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:13:58.462 INFO [http-nio-8080-exec-86] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:14:11.787 INFO [http-nio-8080-exec-92] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:14:11.791 INFO [http-nio-8080-exec-84] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:16:10.748 INFO [http-nio-8080-exec-92] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:17:36.326 INFO [http-nio-8080-exec-97] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:17:55.615 INFO [http-nio-8080-exec-94] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:19:25.508 INFO [http-nio-8080-exec-95] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:20:04.960 INFO [http-nio-8080-exec-95] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:20:04.963 INFO [http-nio-8080-exec-97] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:20:33.801 INFO [http-nio-8080-exec-104] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:20:33.804 INFO [http-nio-8080-exec-103] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:20:55.260 INFO [http-nio-8080-exec-104] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:20:55.263 INFO [http-nio-8080-exec-96] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:21:07.478 INFO [http-nio-8080-exec-104] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:21:07.482 INFO [http-nio-8080-exec-105] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:22:05.330 INFO [http-nio-8080-exec-103] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:22:05.333 INFO [http-nio-8080-exec-108] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:30:58.236 INFO [http-nio-8080-exec-114] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:30:58.241 INFO [http-nio-8080-exec-116] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:32:39.837 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:32:39.840 INFO [http-nio-8080-exec-126] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:32:59.517 INFO [http-nio-8080-exec-129] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:32:59.521 INFO [http-nio-8080-exec-125] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:33:47.953 INFO [http-nio-8080-exec-125] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:33:47.956 INFO [http-nio-8080-exec-130] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:34:04.234 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:34:09.625 INFO [http-nio-8080-exec-134] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:34:39.813 INFO [http-nio-8080-exec-131] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:34:39.816 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:35:26.853 INFO [http-nio-8080-exec-136] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:35:26.862 INFO [http-nio-8080-exec-139] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/tienda-GAME'
+08-Jan-2024 19:47:17.230 INFO [http-nio-8080-exec-147] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:47:21.031 INFO [http-nio-8080-exec-151] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:47:36.064 INFO [http-nio-8080-exec-153] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+08-Jan-2024 19:47:41.568 INFO [http-nio-8080-exec-149] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
