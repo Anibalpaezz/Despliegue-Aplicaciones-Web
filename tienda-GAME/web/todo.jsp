@@ -57,7 +57,7 @@
     while (rsJuegos.next()) {
 %>
             <tr>
-                <td><%= rsJuegos.getString("nombre_juego") %></td>
+                <td><%= rsJuegos.getString("nombre") %></td>
                 <td><%= rsJuegos.getString("compania_desarrolladora") %></td>
                 <td><%= rsJuegos.getString("genero") %></td>
                 <td><%= rsJuegos.getInt("puntuacion_metacritic") %></td>
@@ -87,7 +87,7 @@
         while (rsConsolas.next()) {
 %>
             <tr>
-                <td><%= rsConsolas.getString("nombre_consola") %></td>
+                <td><%= rsConsolas.getString("nombre") %></td>
                 <td><%= rsConsolas.getFloat("frecuencia_cpu") %></td>
                 <td><%= rsConsolas.getFloat("frecuencia_gpu") %></td>
                 <td><%= rsConsolas.getString("compania") %></td>
