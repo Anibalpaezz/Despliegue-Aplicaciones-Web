@@ -413,3 +413,314 @@
 09-Jan-2024 08:48:30.888 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\webapps\ROOT] has finished in [36] ms
 09-Jan-2024 08:48:30.893 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 09-Jan-2024 08:48:30.943 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1548] milliseconds
+09-Jan-2024 08:51:51.430 INFO [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/tienda-GAME]
+09-Jan-2024 08:51:51.452 INFO [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [F:\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml]
+09-Jan-2024 08:51:51.454 WARNING [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/tienda-GAME] in deployment descriptor [F:\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has been ignored
+09-Jan-2024 08:51:51.980 INFO [http-nio-8080-exec-17] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 08:51:51.988 INFO [http-nio-8080-exec-17] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [F:\Despliegue-Aplicaciones-Web\apache-tomcat-9.0.84\conf\Catalina\localhost\tienda-GAME.xml] has finished in [536] ms
+09-Jan-2024 08:51:51.992 INFO [http-nio-8080-exec-18] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tienda-GAME]] after start() had already been called. The second call will be ignored.
+09-Jan-2024 08:55:15.605 INFO [http-nio-8080-exec-29] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:00:51.636 INFO [http-nio-8080-exec-32] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:00:51.692 WARNING [http-nio-8080-exec-32] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [tienda-GAME] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+09-Jan-2024 09:00:51.693 WARNING [http-nio-8080-exec-32] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [tienda-GAME] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:00:51.800 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:00:51.801 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:00:51.910 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:00:51.910 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:00:51.911 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:00:52.186 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:00:52.334 INFO [http-nio-8080-exec-32] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:00:52.352 INFO [http-nio-8080-exec-32] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:01:24.449 INFO [http-nio-8080-exec-39] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:01:24.452 WARNING [http-nio-8080-exec-39] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [tienda-GAME] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+09-Jan-2024 09:01:24.453 WARNING [http-nio-8080-exec-39] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [tienda-GAME] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:01:24.758 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:01:24.758 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:01:24.758 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:01:24.771 INFO [http-nio-8080-exec-39] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:01:24.807 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:01:24.807 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:01:24.807 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:01:24.816 INFO [http-nio-8080-exec-39] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:18:10.799 WARNING [http-nio-8080-exec-58] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [tienda-GAME] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+09-Jan-2024 09:18:10.799 WARNING [http-nio-8080-exec-58] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [tienda-GAME] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:18:10.987 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:18:10.988 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:18:11.081 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:18:11.448 INFO [http-nio-8080-exec-51] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:18:11.778 INFO [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:18:12.163 INFO [http-nio-8080-exec-52] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:18:12.188 INFO [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:18:12.514 INFO [http-nio-8080-exec-60] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:18:12.807 INFO [http-nio-8080-exec-60] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:18:12.812 INFO [http-nio-8080-exec-60] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:18:17.934 INFO [http-nio-8080-exec-50] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:18:18.348 INFO [http-nio-8080-exec-50] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:18:18.355 INFO [http-nio-8080-exec-50] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:18:21.467 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Falló la recarga del contexto [/tienda-GAME]
+09-Jan-2024 09:18:21.467 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:18:21.747 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:18:21.751 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:18:37.609 INFO [http-nio-8080-exec-57] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:18:37.932 INFO [http-nio-8080-exec-57] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:18:37.937 INFO [http-nio-8080-exec-57] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:20:04.936 INFO [http-nio-8080-exec-57] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:20:05.356 INFO [http-nio-8080-exec-57] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:20:05.360 INFO [http-nio-8080-exec-57] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:20:35.340 INFO [http-nio-8080-exec-62] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:20:35.343 WARNING [http-nio-8080-exec-62] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [tienda-GAME] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+09-Jan-2024 09:20:35.344 WARNING [http-nio-8080-exec-62] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [tienda-GAME] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:20:35.685 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:20:35.700 INFO [http-nio-8080-exec-62] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:20:35.708 INFO [http-nio-8080-exec-62] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:26:36.266 WARNING [http-nio-8080-exec-79] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [tienda-GAME] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+09-Jan-2024 09:26:36.266 WARNING [http-nio-8080-exec-79] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [tienda-GAME] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:26:36.398 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:26:36.399 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:26:36.399 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:26:36.717 INFO [http-nio-8080-exec-73] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:26:39.160 INFO [http-nio-8080-exec-75] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:26:39.486 INFO [http-nio-8080-exec-75] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:26:39.492 INFO [http-nio-8080-exec-75] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:26:40.716 INFO [http-nio-8080-exec-73] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:26:41.000 INFO [http-nio-8080-exec-73] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:26:41.004 INFO [http-nio-8080-exec-73] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:26:42.338 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Falló la recarga del contexto [/tienda-GAME]
+09-Jan-2024 09:26:42.338 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:26:42.634 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:26:42.637 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+09-Jan-2024 09:28:12.757 INFO [http-nio-8080-exec-85] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/tienda-GAME]
+09-Jan-2024 09:28:12.761 WARNING [http-nio-8080-exec-85] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [tienda-GAME] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+09-Jan-2024 09:28:12.761 WARNING [http-nio-8080-exec-85] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [tienda-GAME] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:28:12.783 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:28:12.783 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1349)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:981)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+09-Jan-2024 09:28:13.134 INFO [http-nio-8080-exec-85] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+09-Jan-2024 09:28:13.144 INFO [http-nio-8080-exec-85] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
