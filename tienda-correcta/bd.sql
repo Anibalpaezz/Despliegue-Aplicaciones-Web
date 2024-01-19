@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS tienda_juegos;
 CREATE DATABASE IF NOT EXISTS tienda_juegos;
 
 USE tienda_juegos;
