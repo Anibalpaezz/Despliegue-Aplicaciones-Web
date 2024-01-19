@@ -43,3 +43,5 @@
 0:0:0:0:0:0:0:1 - - [19/Jan/2024:08:56:22 +0100] "GET /tienda-GAME/ HTTP/1.1" 200 2020
 0:0:0:0:0:0:0:1 - - [19/Jan/2024:08:56:34 +0100] "POST /tienda-GAME/login HTTP/1.1" 200 166
 0:0:0:0:0:0:0:1 - - [19/Jan/2024:08:56:48 +0100] "POST /tienda-GAME/login HTTP/1.1" 200 166
+127.0.0.1 - - [19/Jan/2024:08:58:51 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jan/2024:08:58:51 +0100] "GET /manager/text/ HTTP/1.1" 404 -
