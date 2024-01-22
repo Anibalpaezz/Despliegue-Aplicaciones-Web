@@ -5,44 +5,19 @@
     <head>
         <title>Catálogo de Juegos</title>
         <style>
-            table {
-                border-collapse: collapse;
-                width: 80%;
-                margin: 20px;
-            }
-
-            th, td {
-                border: 1px solid #ddd;
-                padding: 10px;
-                text-align: left;
-            }
-
-            th {
-                background-color: #333;
-                color: #fff;
-            }
-
-            .filtrar {
-                margin-top: 10px;
-                padding: 10px;
-                background-color: #4caf50;
-                color: #fff;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
+            table{border-collapse:collapse;width:80%;margin:20px}td,th{border:1px solid #ddd;padding:10px;text-align:left}th{background-color:#333;color:#fff}.filtrar{margin-top:10px;padding:10px;background-color:#4caf50;color:#fff;border:none;border-radius:4px;cursor:pointer}
         </style>
     </head>
     <body>
-        <h1>Filtrar juegos por generación</h1>
+        <h1>Filtrar juegos por consola</h1>
         <form action="" method="get">
             <label for="generacion">Selecciona la generación:</label>
             <select name="generacion" id="generacion">
                 <option value="PS5">PS5</option>
-                <option value="2">Xbox S/X</option>
-                <option value="Nintendo switch">Nintendo switch</option>
-                <option value="4">PS4</option>
-                <option value="5">Xbox One</option>
+                <option value="Xbox">Xbox S/X</option>
+                <option value="Nintendo">Nintendo switch</option>
+                <option value="PS4">PS4</option>
+                <option value="XbOne">Xbox One</option>
             </select>
             <button type="submit" class="filtrar">Filtrar</button>
         </form>
@@ -50,7 +25,7 @@
         <table>
             <tr>
                 <th>Nombre del Juego</th>
-                <th>Generacion</th>
+                <th>Consola</th>
                 <th>Compañía Desarrolladora</th>
                 <th>Género</th>
                 <th>Puntuación en Metacritic</th>
@@ -69,20 +44,29 @@
                     String password = "nico";
                     conn = DriverManager.getConnection(url, user, password);
 
-                    String generacionFilter = request.getParameter("generacion");
-                    String query = "SELECT * FROM juegos";
-                    if (generacionFilter != null && !generacionFilter.isEmpty()) {
-                        query += " WHERE id_consola = " + generacionFilter;
-                    }
+                    String select_filtro = request.getParameter("generacion");
+                    String consulta = "SELECT juegos.*, consolas.nombre AS nombre_consola FROM juegos " +
+                    "JOIN consolas ON juegos.id_consola = consolas.id_consola";
 
+if (select_filtro != null && !select_filtro.isEmpty() && select_filtro.equals("PS5")) {
+    consulta += " WHERE consolas.nombre LIKE 'PS5%'";
+} else if (select_filtro != null && !select_filtro.isEmpty() && select_filtro.equals("Xbox")) {
+    consulta += " WHERE consolas.nombre LIKE 'X%S' OR consolas.nombre LIKE 'X%X'";
+} else if (select_filtro != null && !select_filtro.isEmpty() && select_filtro.equals("Nintendo")) {
+    consulta += " WHERE consolas.nombre LIKE 'Nintendo%'";
+} else if (select_filtro != null && !select_filtro.isEmpty() && select_filtro.equals("PS4")) {
+    consulta += " WHERE consolas.nombre LIKE 'PS4'";
+} else if (select_filtro != null && !select_filtro.isEmpty() && select_filtro.equals("XbOne")) {
+    consulta += " WHERE consolas.nombre LIKE 'X%%e'";
+}
                     stmt = conn.createStatement();
-                    rs = stmt.executeQuery(query);
+                    rs = stmt.executeQuery(consulta);
 
                     while (rs.next()) {
             %>
             <tr>
                 <td><%= rs.getString("nombre")%></td>
-                <td><%= rs.getString("generacion")%></td>
+                <td><%= rs.getString("nombre_consola")%></td>
                 <td><%= rs.getString("compania_desarrolladora")%></td>
                 <td><%= rs.getString("genero")%></td>
                 <td><%= rs.getInt("puntuacion_metacritic")%></td>
@@ -94,8 +78,6 @@
                 } catch (SQLException | ClassNotFoundException e) {
                     e.printStackTrace();
                     out.println("Error: " + e.getMessage());
-                } finally {
-                    // Close resources in the finally block
                 }
             %>
         </table>

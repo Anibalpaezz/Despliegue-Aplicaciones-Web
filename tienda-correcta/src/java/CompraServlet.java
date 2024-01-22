@@ -22,8 +22,8 @@ public class CompraServlet extends HttpServlet {
 
         if (seleccion != null && paginaOrigen != null && (paginaOrigen.equals("juegos") || paginaOrigen.equals("consolas"))) {
             Connection conn = null;
-            PreparedStatement pstmtSelect = null;
-            PreparedStatement pstmtUpdate = null;
+            PreparedStatement stmt_select = null;
+            PreparedStatement stmt_update = null;
 
             try {
                 Class.forName("com.mysql.jdbc.Driver");
@@ -32,45 +32,45 @@ public class CompraServlet extends HttpServlet {
                 String password = "nico";
                 conn = DriverManager.getConnection(url, user, password);
 
-                String selectQuery = "SELECT unidades_disponibles FROM " + paginaOrigen + " WHERE nombre = ?";
-                pstmtSelect = conn.prepareStatement(selectQuery);
+                String consulta_select = "SELECT unidades_disponibles FROM " + paginaOrigen + " WHERE nombre = ?";
+                stmt_select = conn.prepareStatement(consulta_select);
 
-                String updateQuery = "UPDATE " + paginaOrigen + " SET unidades_disponibles = unidades_disponibles - 1 WHERE nombre = ?";
-                pstmtUpdate = conn.prepareStatement(updateQuery);
+                String consulta_update = "UPDATE " + paginaOrigen + " SET unidades_disponibles = unidades_disponibles - 1 WHERE nombre = ?";
+                stmt_update = conn.prepareStatement(consulta_update);
 
                 int comprasExitosas = 0;
-                boolean alMenosUnaCompraFallida = false;
-                String elementosComprados = "";
-                String elementosNoComprados = "";
+                boolean fallida = false;
+                String comprado = "";
+                String no_comprado = "";
 
                 for (String elemento : seleccion) {
-                    pstmtSelect.setString(1, elemento);
-                    ResultSet resultSet = pstmtSelect.executeQuery();
+                    stmt_select.setString(1, elemento);
+                    ResultSet resultSet = stmt_select.executeQuery();
 
                     if (resultSet.next()) {
-                        int unidadesDisponibles = resultSet.getInt("unidades_disponibles");
+                        int unidades_disponibles = resultSet.getInt("unidades_disponibles");
 
-                        if (unidadesDisponibles > 0) {
-                            pstmtUpdate.setString(1, elemento);
-                            pstmtUpdate.executeUpdate();
+                        if (unidades_disponibles > 0) {
+                            stmt_update.setString(1, elemento);
+                            stmt_update.executeUpdate();
 
                             comprasExitosas++;
 
-                            elementosComprados += elemento + ", ";
+                            comprado += elemento + ", ";
                         } else {
-                            alMenosUnaCompraFallida = true;
-                            elementosNoComprados += elemento + ", ";
+                            fallida = true;
+                            no_comprado += elemento + ", ";
                         }
                     }
                 }
                 if (comprasExitosas > 0) {
                     response.getWriter().println("<h1>Compra realizada</h1>");
-                    response.getWriter().println("<p>Elementos comprados: " + elementosComprados + "</p>");
+                    response.getWriter().println("<p>Elementos comprados: " + comprado + "</p>");
                     response.getWriter().println("<button onclick='history.go(-1);'>Volver atras</button>");
                 }
-                if (alMenosUnaCompraFallida) {
+                if (fallida) {
                     response.getWriter().println("<h1>Falta de stock</h1>");
-                    response.getWriter().println("<p>Elementos no comprados: " + elementosNoComprados + "</p>");
+                    response.getWriter().println("<p>Elementos no comprados: " + no_comprado + "</p>");
                     response.getWriter().println("<button onclick='history.go(-1);'>Volver atras</button>");
                 }
             } catch (ClassNotFoundException | SQLException e) {
@@ -78,11 +78,11 @@ public class CompraServlet extends HttpServlet {
                 response.getWriter().println("Error: " + e.getMessage());
             } finally {
                 try {
-                    if (pstmtSelect != null) {
-                        pstmtSelect.close();
+                    if (stmt_select != null) {
+                        stmt_select.close();
                     }
-                    if (pstmtUpdate != null) {
-                        pstmtUpdate.close();
+                    if (stmt_update != null) {
+                        stmt_update.close();
                     }
                 } catch (SQLException e) {
                     e.printStackTrace();

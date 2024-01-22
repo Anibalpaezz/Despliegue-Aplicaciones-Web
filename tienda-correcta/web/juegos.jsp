@@ -12,32 +12,7 @@
     <head>
         <title>Catálogo de Juegos</title>
         <style>
-            table {
-                border-collapse: collapse;
-                width: 80%;
-                margin: 20px;
-            }
-
-            th, td {
-                border: 1px solid #ddd;
-                padding: 10px;
-                text-align: left;
-            }
-
-            th {
-                background-color: #333;
-                color: #fff;
-            }
-
-            .comprar {
-                margin-top: 10px;
-                padding: 10px;
-                background-color: #4caf50;
-                color: #fff;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
+        table{border-collapse:collapse;width:80%;margin:20px}td,th{border:1px solid #ddd;padding:10px;text-align:left}th{background-color:#333;color:#fff}.comprar{margin-top:10px;padding:10px;background-color:#4caf50;color:#fff;border:none;border-radius:4px;cursor:pointer}
         </style>
     </head>
     <body>
@@ -55,12 +30,11 @@
                 String password = "nico";
                 conn = DriverManager.getConnection(url, user, password);
 
-                String query = "SELECT * FROM juegos";
+                String consulta = "SELECT * FROM juegos";
                 stmt = conn.createStatement();
-                rs = stmt.executeQuery(query);
+                rs = stmt.executeQuery(consulta);
             %>
 
-            <button type="button" class="comprar" onclick="filtrar()">Filtrar</button>
             <br>
             <table>
                 <tr>

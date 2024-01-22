@@ -36,8 +36,8 @@ public class login extends HttpServlet {
             String dbPassword = "nico";
             conn = DriverManager.getConnection(url, dbUsername, dbPassword);
 
-            String query = "SELECT * FROM usuarios WHERE nombre_usuario=? AND contrasena=?";
-            stmt = conn.prepareStatement(query);
+            String consulta = "SELECT * FROM usuarios WHERE nombre_usuario=? AND contrasena=?";
+            stmt = conn.prepareStatement(consulta);
             stmt.setString(1, username);
             stmt.setString(2, password);
             rs = stmt.executeQuery();

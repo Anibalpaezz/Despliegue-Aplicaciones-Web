@@ -24,7 +24,7 @@ public class eliminar extends HttpServlet {
 
         if (seleccion != null && paginaOrigen != null && ("juegos".equals(paginaOrigen) || "consolas".equals(paginaOrigen))) {
             Connection conn = null;
-            PreparedStatement pstmtDelete = null;
+            PreparedStatement stmt_eliminar = null;
 
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
@@ -33,34 +33,34 @@ public class eliminar extends HttpServlet {
                 String password = "nico";
                 conn = DriverManager.getConnection(url, user, password);
 
-                String deleteQuery = "DELETE FROM " + paginaOrigen + " WHERE nombre = ?";
-                pstmtDelete = conn.prepareStatement(deleteQuery);
+                String eliminar = "DELETE FROM " + paginaOrigen + " WHERE nombre = ?";
+                stmt_eliminar = conn.prepareStatement(eliminar);
 
-                int eliminacionesExitosas = 0;
-                boolean alMenosUnaEliminacionFallida = false;
-                String elementosEliminados = "";
-                String elementosNoEliminados = "";
+                int correctas = 0;
+                boolean fallida = false;
+                String eliminados = "";
+                String no_eliminados = "";
 
                 for (String elemento : seleccion) {
-                    pstmtDelete.setString(1, elemento);
-                    int rowsAffected = pstmtDelete.executeUpdate();
+                    stmt_eliminar.setString(1, elemento);
+                    int filas = stmt_eliminar.executeUpdate();
 
-                    if (rowsAffected > 0) {
-                        eliminacionesExitosas++;
-                        elementosEliminados += elemento + ", ";
+                    if (filas > 0) {
+                        correctas++;
+                        eliminados += elemento + ", ";
                     } else {
-                        alMenosUnaEliminacionFallida = true;
-                        elementosNoEliminados += elemento + ", ";
+                        fallida = true;
+                        no_eliminados += elemento + ", ";
                     }
                 }
-                if (eliminacionesExitosas > 0) {
+                if (correctas > 0) {
                     response.getWriter().println("<h1>Eliminado correctamente</h1>");
-                    response.getWriter().println("<p>Elementos eliminados: " + elementosEliminados + "</p>");
+                    response.getWriter().println("<p>Elementos eliminados: " + eliminados + "</p>");
                     response.getWriter().println("<button onclick='history.go(-1);'>Volver</button>");
                 }
-                if (alMenosUnaEliminacionFallida) {
+                if (fallida) {
                     response.getWriter().println("<h1>Error en el borrado</h1>");
-                    response.getWriter().println("<p>Elementos no eliminados: " + elementosNoEliminados + "</p>");
+                    response.getWriter().println("<p>Elementos no eliminados: " + no_eliminados + "</p>");
                     response.getWriter().println("<button onclick='history.go(-1);'>Volver</button>");
                 }
             } catch (ClassNotFoundException | SQLException e) {
@@ -68,8 +68,8 @@ public class eliminar extends HttpServlet {
                 response.getWriter().println("Error: " + e.getMessage());
             } finally {
                 try {
-                    if (pstmtDelete != null) {
-                        pstmtDelete.close();
+                    if (stmt_eliminar != null) {
+                        stmt_eliminar.close();
                     }
                 } catch (SQLException e) {
                     e.printStackTrace();
