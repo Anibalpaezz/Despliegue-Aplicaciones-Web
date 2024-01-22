@@ -48,12 +48,12 @@ public class login extends HttpServlet {
                 if (isAdmin) {
                     String user = username.substring(0, 1).toUpperCase() + username.substring(1).toLowerCase();
                     HttpSession session = request.getSession(true);
-                    session.setAttribute("nombre", user);
+                    session.setAttribute("admin", username);
                     response.sendRedirect("admin.jsp");
                 } else {
                     String user = username.substring(0, 1).toUpperCase() + username.substring(1).toLowerCase();
                     HttpSession session = request.getSession(true);
-                    session.setAttribute("nombre", user);
+                    session.setAttribute("user", username);
                     response.sendRedirect("user.jsp");
                 }
             } else {

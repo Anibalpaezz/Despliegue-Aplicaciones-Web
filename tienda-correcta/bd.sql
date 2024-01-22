@@ -92,12 +92,14 @@ VALUES
 ('Fallout 4', 'Bethesda Game Studios', 'RPG', 88, 54.99, 180, 1, 1),
 ('Super Smash Bros. Brawl', 'Nintendo', 'Lucha', 93, 39.99, 120, 4, 1);
 
-
 INSERT INTO usuarios (nombre_usuario, contrasena, es_administrador)
 VALUES
     ('anibal', 'nico', 1),
     ('nico', 'nico', 0),
     ('alejandro', 'nico', 0);
+
+UPDATE juegos SET unidades_disponibles = 5 WHERE unidades_disponibles != 5;
+UPDATE consolas SET unidades_disponibles = 5 WHERE unidades_disponibles != 5;
 
 delete table consolas;
 delete table juegos;
