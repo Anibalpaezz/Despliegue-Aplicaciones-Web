@@ -46,10 +46,10 @@
 <body>
 
 <nav>
-    <a href="juegos.jsp">Juegos</a>
-    <a href="consolas.jsp">Consolas</a>
-    <a href="todo.jsp">Todo</a>
-    <a href="stock.jsp">Stock</a>
+    <a href="juegos.jsp">Comprar Juegos</a>
+    <a href="consolas.jsp">Comprar Consolas</a>
+    <a href="cat_juegos.jsp">Catalogo Juegos</a>
+    <a href="cat_consolas.jsp">Catalogo Consolas</a>
     <a href="nuevo_juego.jsp">Agregar Juego</a>
     <a href="elim_consolas.jsp">Eliminar consola</a>
     <a href="elim_juegos.jsp">Eliminar juegos</a>

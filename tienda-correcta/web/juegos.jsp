@@ -41,16 +41,8 @@
         </style>
     </head>
     <body>
-        <h1>Catálogo de Juegos</h1>
+        <h1>Comprar juegos</h1>
         <form action="CompraServlet" method="get">
-            <label for="filtroGeneracion">Filtrar por Generación:</label>
-            <select name="filtroGeneracion" id="filtroGeneracion">
-                <option value="4" <%=(request.getParameter("filtroGeneracion") == null || request.getParameter("filtroGeneracion").isEmpty()) ? "selected" : ""%>>Todas</option>
-                <option value="1" <%=("1".equals(request.getParameter("filtroGeneracion"))) ? "selected" : ""%>>Generación 1</option>
-                <option value="2" <%=("2".equals(request.getParameter("filtroGeneracion"))) ? "selected" : ""%>>Generación 2</option>
-                <option value="3" <%=("3".equals(request.getParameter("filtroGeneracion"))) ? "selected" : ""%>>Generación 3</option>
-            </select>
-
             <%
             Connection conn = null;
             Statement stmt = null;
@@ -99,23 +91,6 @@
             <button type="submit" class="comprar">Comprar Seleccionados</button>
             <input type="hidden" name="paginaOrigen" value="juegos">
         </form>
-
-        <script>
-            function filtrar() {
-                var filtroGeneracion = document.getElementById("filtroGeneracion").value;
-                var form = document.getElementById("filtroForm");
-
-                // Agrega el valor seleccionado como un nuevo campo en el formulario
-                var input = document.createElement("input");
-                input.setAttribute("type", "hidden");
-                input.setAttribute("name", "filtroGeneracion");
-                input.setAttribute("value", filtroGeneracion);
-                form.appendChild(input);
-
-                // Envía el formulario
-                form.submit();
-            }
-        </script>
         <%
             } catch (SQLException | ClassNotFoundException e) {
                 e.printStackTrace();
