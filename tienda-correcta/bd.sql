@@ -91,6 +91,9 @@ VALUES
 ('Mass Effect 2', 'BioWare', 'RPG', 94, 59.99, 200, 2, 1),
 ('Fallout 4', 'Bethesda Game Studios', 'RPG', 88, 54.99, 180, 1, 1),
 ('Super Smash Bros. Brawl', 'Nintendo', 'Lucha', 93, 39.99, 120, 4, 1);
+('Mass Effect 2', 'BioWare', 'RPG', 94, 59.99, 200, 8, 1),
+('Fallout 4', 'Bethesda Game Studios', 'RPG', 88, 54.99, 180, 8, 1),
+('Super Smash Bros. Brawl', 'Nintendo', 'Lucha', 93, 39.99, 120, 8, 1);
 
 INSERT INTO usuarios (nombre_usuario, contrasena, es_administrador)
 VALUES
