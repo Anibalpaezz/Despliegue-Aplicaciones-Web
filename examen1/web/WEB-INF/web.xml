@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>funcionalidadesAdm</servlet-name>
+        <servlet-class>funcionalidadesAdm</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>funcionalidadesUsuarios</servlet-name>
+        <servlet-class>funcionalidadesUsuarios</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BusquedaDeTe</servlet-name>
+        <servlet-class>BusquedaDeTe</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>introduceTe</servlet-name>
+        <servlet-class>introduceTe</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funcionalidadesAdm</servlet-name>
+        <url-pattern>/funcionalidadesAdm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>funcionalidadesUsuarios</servlet-name>
+        <url-pattern>/funcionalidadesUsuarios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BusquedaDeTe</servlet-name>
+        <url-pattern>/BusquedaDeTe</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>introduceTe</servlet-name>
+        <url-pattern>/introduceTe</url-pattern>
+    </servlet-mapping>
+</web-app>
