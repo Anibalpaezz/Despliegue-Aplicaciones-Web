@@ -64,12 +64,12 @@ public class CompraServlet extends HttpServlet {
                     }
                 }
                 if (comprasExitosas > 0) {
-                    response.getWriter().println("<h1>Compra realizada correctamente</h1>");
+                    response.getWriter().println("<h1>Compra realizada</h1>");
                     response.getWriter().println("<p>Elementos comprados: " + elementosComprados + "</p>");
                     response.getWriter().println("<button onclick='history.go(-1);'>Volver atras</button>");
                 }
                 if (alMenosUnaCompraFallida) {
-                    response.getWriter().println("<h1>Error: Al menos uno de los elementos seleccionados no pudo ser comprado debido a la falta de stock</h1>");
+                    response.getWriter().println("<h1>Falta de stock</h1>");
                     response.getWriter().println("<p>Elementos no comprados: " + elementosNoComprados + "</p>");
                     response.getWriter().println("<button onclick='history.go(-1);'>Volver atras</button>");
                 }
@@ -96,7 +96,7 @@ public class CompraServlet extends HttpServlet {
                 }
             }
         } else {
-            response.getWriter().println("Error: Parámetros incorrectos");
+            response.getWriter().println("Error");
         }
     }
 }

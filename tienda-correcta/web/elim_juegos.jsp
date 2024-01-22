@@ -42,7 +42,7 @@
     </head>
     <body>
         <h1>Catálogo de Juegos</h1>
-        <form action="CompraServlet" method="get">
+        <form action="eliminar" method="get">
             <label for="filtroGeneracion">Filtrar por Generación:</label>
             <select name="filtroGeneracion" id="filtroGeneracion">
                 <option value="4" <%=(request.getParameter("filtroGeneracion") == null || request.getParameter("filtroGeneracion").isEmpty()) ? "selected" : ""%>>Todas</option>

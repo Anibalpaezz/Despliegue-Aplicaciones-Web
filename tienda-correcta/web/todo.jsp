@@ -1,5 +1,13 @@
 <%@ page import="java.sql.*" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%
+    //HttpSession session = request.getSession(false);
+    /*if (session == null || session.getAttribute("admin") == null || session.getAttribute("user") == null) {
+            response.sendRedirect("index.html");
+    }*/
+%>
+
 <html>
     <head>
         <title>Catálogo Completo</title>

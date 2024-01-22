@@ -59,7 +59,7 @@
         rs = stmt.executeQuery(query);
 %>
         <h1>Catálogo de Consolas</h1>
-        <form action="CompraServlet" method="get">
+        <form action="eliminar" method="get">
             <table>
                 <tr>
                     <th>Nombre de la Consola</th>

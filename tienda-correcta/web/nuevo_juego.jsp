@@ -1,6 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.sql.*" %>
 
+<%
+    //HttpSession session = request.getSession(false);
+    /*if (session == null || session.getAttribute("admin") == null || session.getAttribute("user") == null) {
+            response.sendRedirect("index.html");
+    }*/
+%>
+
+
 <html>
 <head>
     <title>Agregar Juego</title>

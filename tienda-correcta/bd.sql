@@ -24,7 +24,7 @@ CREATE TABLE juegos (
     unidades_disponibles INT,
     id_consola INT,
     generacion INT,
-    FOREIGN KEY (id_consola) REFERENCES consolas(id_consola)
+    CONSTRAINT fk_id_consola FOREIGN KEY (id_consola) REFERENCES consolas(id_consola) ON DELETE CASCADE
 )engine=InnoDB;
 
 CREATE TABLE usuarios (

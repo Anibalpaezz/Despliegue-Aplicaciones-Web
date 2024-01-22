@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
+<%
+    //HttpSession session = request.getSession(false);
+    if (session == null || session.getAttribute("admin") == null) {
+            response.sendRedirect("index.html");
+    }
+%>
 
 
 
@@ -45,11 +51,13 @@
     <a href="todo.jsp">Todo</a>
     <a href="stock.jsp">Stock</a>
     <a href="nuevo_juego.jsp">Agregar Juego</a>
-    <a href="index.html">Cerrar sesion</a>
+    <a href="elim_consolas.jsp">Eliminar consola</a>
+    <a href="elim_juegos.jsp">Eliminar juegos</a>
+    <a href="logout">Cerrar sesion</a>
 </nav>
     
 
-<h2 style="color: white; text-align: center;">Bienvenido, <%=session.getAttribute("nombre")%></h2>
+<h2 style="color: white; text-align: center;">Bienvenido, <%=session.getAttribute("admin")%></h2>
 
 </body>
 </html>

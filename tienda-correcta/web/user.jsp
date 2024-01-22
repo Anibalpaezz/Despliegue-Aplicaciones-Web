@@ -1,4 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<%
+    //HttpSession session = request.getSession(false);
+    if (session == null || session.getAttribute("user") == null) {
+            response.sendRedirect("index.html");
+    }
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,10 +47,10 @@
     <a href="juegos.jsp">Juegos</a>
     <a href="consolas.jsp">Consolas</a>
     <a href="todo.jsp">Todo</a>
-    <a href="index.html">Cerrar sesion</a>
+    <a href="logout">Cerrar sesion</a>
 </nav>
 
-<h2 style="color: white; text-align: center;">Bienvenido, <%=session.getAttribute("nombre")%></h2>
+<h2 style="color: white; text-align: center;">Bienvenido, <%=session.getAttribute("user")%></h2>
 
 
 </body>
