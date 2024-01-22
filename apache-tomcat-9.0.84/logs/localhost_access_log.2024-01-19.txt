@@ -45,3 +45,7 @@
 0:0:0:0:0:0:0:1 - - [19/Jan/2024:08:56:48 +0100] "POST /tienda-GAME/login HTTP/1.1" 200 166
 127.0.0.1 - - [19/Jan/2024:08:58:51 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
 127.0.0.1 - - [19/Jan/2024:08:58:51 +0100] "GET /manager/text/ HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jan/2024:09:01:20 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jan/2024:09:01:20 +0100] "GET /manager/text/ HTTP/1.1" 404 610
+127.0.0.1 - - [19/Jan/2024:09:01:20 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jan/2024:09:01:20 +0100] "GET /manager/text/ HTTP/1.1" 404 610
