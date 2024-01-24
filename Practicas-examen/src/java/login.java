@@ -3,13 +3,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 
-import com.sun.jdi.connect.spi.Connection;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import static java.lang.System.out;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  *
@@ -34,7 +39,7 @@ public class login extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet login</title>");            
+            out.println("<title>Servlet login</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet login at " + request.getContextPath() + "</h1>");
@@ -65,7 +70,6 @@ public class login extends HttpServlet {
             response.getWriter().println("Bienvenido");
         }
 
-        
     }
 
     /**
@@ -86,40 +90,42 @@ public class login extends HttpServlet {
             response.sendRedirect("index.html");
             return;
         } else {
-            response.getWriter().println("Bienvenido");
+            
 
-            String jdbcUrl = "jdbc:mysql://localhost:3306/examen";
-            String usuario = "anibal";
-            String clave = "nico";
+            String nombre = request.getParameter("nombre");
+            String pass = request.getParameter("pass");
 
-            int nombre = Integer.parseInt(request.getParameter("nombre"));
-            int pass = Integer.parseInt(request.getParameter("pass"));
+            Connection conn = null;
+            PreparedStatement stmt = null;
+            ResultSet rs = null;
 
             try {
-    // Cargar el controlador de la base de datos
-    Class.forName("com.mysql.cj.jdbc.Driver");
+                Class.forName("com.mysql.jdbc.Driver");
 
-    // Establecer la conexión
-    try (Connection connection = DriverManager.getConnection(jdbcUrl, usuario, clave)) {
-        // Consulta preparada
-        String sql = "SELECT nombre, pass FROM usuarios WHERE nombre = ? AND pass = ?";
-        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
-            preparedStatement.setString(1, nombre);  // Deberías usar setString para el nombre
-            preparedStatement.setString(2, password); // Asegúrate de tener una variable 'password' con la contraseña proporcionada
+                String url = "jdbc:mysql://localhost:3306/examen";
+                String dbUsername = "anibal";
+                String dbPassword = "nico";
+                conn = DriverManager.getConnection(url, dbUsername, dbPassword);
 
-            // Ejecutar la consulta
-            try (ResultSet resultSet = preparedStatement.executeQuery()) {
-                if (resultSet.next()) {
-                    response.getWriter().println("Correcto");
+                String consulta = "SELECT * FROM usuarios WHERE nombre =? AND pass =?";
+                stmt = conn.prepareStatement(consulta);
+                stmt.setString(1, nombre);
+                stmt.setString(2, pass);
+                rs = stmt.executeQuery();
+
+                if (rs.next()) {
+                    out.println("<p>Error: Usuario o contraseña correctos.</p>");
+                    response.getWriter().println("Bienvenido");
                 } else {
-                    response.getWriter().println("Usuario o contraseña incorrectos");
+                    out.println("<p>Error: Usuario o contraseña incorrectos.</p>");
+                    response.getWriter().println("NOOOOOO");
+                    out.println(nombre);
+                    out.println(pass);
                 }
+            } catch (ClassNotFoundException | SQLException e) {
+                e.printStackTrace();
+                out.println("Error: " + e.getMessage());
             }
-        }
-    }
-} catch (ClassNotFoundException | SQLException e) {
-    e.printStackTrace();
-}
 
         }
     }
