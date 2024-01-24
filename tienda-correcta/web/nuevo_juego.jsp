@@ -1,6 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.sql.*" %>
 
+<%
+    //HttpSession session = request.getSession(false);
+    if (session == null || session.getAttribute("admin") == null) {
+            response.sendRedirect("index.html");
+    }
+%>
+
+
 <html>
 <head>
     <title>Agregar Juego</title>
@@ -29,9 +37,9 @@
             int idConsola = Integer.parseInt(request.getParameter("idConsola"));
             int generacion = Integer.parseInt(request.getParameter("generacion"));
 
-            String insertQuery = "INSERT INTO juegos (nombre, compania_desarrolladora, genero, puntuacion_metacritic, precio, unidades_disponibles, id_consola, generacion) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            String insertar = "INSERT INTO juegos (nombre, compania_desarrolladora, genero, puntuacion_metacritic, precio, unidades_disponibles, id_consola, generacion) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
-            try (PreparedStatement preparedStatement = conn.prepareStatement(insertQuery)) {
+            try (PreparedStatement preparedStatement = conn.prepareStatement(insertar)) {
                 preparedStatement.setString(1, nombre);
                 preparedStatement.setString(2, desarrolladora);
                 preparedStatement.setString(3, genero);
@@ -41,9 +49,9 @@
                 preparedStatement.setInt(7, idConsola);
                 preparedStatement.setInt(8, generacion);
 
-                int rowsAffected = preparedStatement.executeUpdate();
+                int filas = preparedStatement.executeUpdate();
 
-                if (rowsAffected > 0) {
+                if (filas > 0) {
                     out.println("<h2>Juego añadido con éxito.</h2>");
                 } else {
                     out.println("<h2>Error al añadir el juego.</h2>");

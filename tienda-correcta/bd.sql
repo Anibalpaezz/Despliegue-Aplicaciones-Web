@@ -24,7 +24,7 @@ CREATE TABLE juegos (
     unidades_disponibles INT,
     id_consola INT,
     generacion INT,
-    FOREIGN KEY (id_consola) REFERENCES consolas(id_consola)
+    CONSTRAINT fk_id_consola FOREIGN KEY (id_consola) REFERENCES consolas(id_consola) ON DELETE CASCADE
 )engine=InnoDB;
 
 CREATE TABLE usuarios (
@@ -90,7 +90,10 @@ VALUES
 ('The Legend of Zelda: Twilight Princess', 'Nintendo', 'Aventura', 95, 49.99, 180, 4, 1),
 ('Mass Effect 2', 'BioWare', 'RPG', 94, 59.99, 200, 2, 1),
 ('Fallout 4', 'Bethesda Game Studios', 'RPG', 88, 54.99, 180, 1, 1),
-('Super Smash Bros. Brawl', 'Nintendo', 'Lucha', 93, 39.99, 120, 4, 1);
+('Super Smash Bros. Brawl', 'Nintendo', 'Lucha', 93, 39.99, 120, 4, 1),
+('Mass Effect 2', 'BioWare', 'RPG', 94, 59.99, 200, 8, 1),
+('Fallout 4', 'Bethesda Game Studios', 'RPG', 88, 54.99, 180, 8, 1),
+('Super Smash Bros. Brawl', 'Nintendo', 'Lucha', 93, 39.99, 120, 8, 1);
 
 INSERT INTO usuarios (nombre_usuario, contrasena, es_administrador)
 VALUES

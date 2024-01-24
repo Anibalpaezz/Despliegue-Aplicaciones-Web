@@ -3,14 +3,13 @@
 
 <%
     //HttpSession session = request.getSession(false);
-    if (session == null || session.getAttribute("admin") == null || session.getAttribute("user") == null) {
+    if (session == null || session.getAttribute("admin") == null) {
             response.sendRedirect("index.html");
     }
 %>
-
 <html>
 <head>
-    <title>Catálogo de Consolas</title>
+    <title>Borra consolas</title>
     <style>
         table{border-collapse:collapse;width:80%;margin:20px}td,th{border:1px solid #ddd;padding:10px;text-align:left}th{background-color:#333;color:#fff}.comprar{margin-top:10px;padding:10px;background-color:#4caf50;color:#fff;border:none;border-radius:4px;cursor:pointer}
     </style>
@@ -30,12 +29,12 @@
         String password = "nico";
         conn = DriverManager.getConnection(url, user, password);
 
-        String consulta = "SELECT * FROM consolas";
+        String query = "SELECT * FROM consolas";
         stmt = conn.createStatement();
-        rs = stmt.executeQuery(consulta);
+        rs = stmt.executeQuery(query);
 %>
-        <h1>Catálogo de Consolas</h1>
-        <form action="CompraServlet" method="get">
+        <h1>Borra consolas</h1>
+        <form action="eliminar" method="get">
             <table>
                 <tr>
                     <th>Nombre de la Consola</th>
@@ -64,7 +63,7 @@
         }
 %>
             </table>
-            <button type="submit" class="comprar">Comprar Seleccionados</button>
+            <button type="submit" class="comprar">Borra seleccion</button>
             <input type="hidden" name="paginaOrigen" value="consolas">
         </form>
 <%

@@ -1,7 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-
-
+<%
+    //HttpSession session = request.getSession(false);
+    if (session == null || session.getAttribute("admin") == null) {
+            response.sendRedirect("index.html");
+    }
+%>
 
 <!DOCTYPE html>
 <html>
@@ -40,16 +44,18 @@
 <body>
 
 <nav>
-    <a href="juegos.jsp">Juegos</a>
-    <a href="consolas.jsp">Consolas</a>
-    <a href="todo.jsp">Todo</a>
-    <a href="stock.jsp">Stock</a>
+    <a href="juegos.jsp">Comprar Juegos</a>
+    <a href="consolas.jsp">Comprar Consolas</a>
+    <a href="cat_juegos.jsp">Filtro Generacion</a>
+    <a href="cat_juegos2.jsp">Filtro Consolas</a>
     <a href="nuevo_juego.jsp">Agregar Juego</a>
-    <a href="index.html">Cerrar sesion</a>
+    <a href="elim_consolas.jsp">Eliminar consola</a>
+    <a href="elim_juegos.jsp">Eliminar juegos</a>
+    <a href="logout">Cerrar sesion</a>
 </nav>
     
 
-<h2 style="color: white; text-align: center;">Bienvenido, <%=session.getAttribute("nombre")%></h2>
+<h2 style="color: white; text-align: center;">Bienvenido, <%=session.getAttribute("admin")%></h2>
 
 </body>
 </html>
