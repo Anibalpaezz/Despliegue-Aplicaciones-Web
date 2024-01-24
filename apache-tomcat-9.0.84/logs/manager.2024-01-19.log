@@ -1,8 +1,0 @@
-19-Jan-2024 08:55:32.935 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
-19-Jan-2024 08:55:32.936 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
-19-Jan-2024 08:55:42.400 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
-19-Jan-2024 08:55:42.409 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
-19-Jan-2024 08:55:42.439 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Manager: stop: Stopping web application '/tienda-GAME'
-19-Jan-2024 08:55:42.550 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/tienda-GAME'
-19-Jan-2024 08:55:57.221 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
-19-Jan-2024 08:55:57.226 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
