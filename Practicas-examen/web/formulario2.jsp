@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Hola esto es un Formulario</h1>
-    <form action="login" method="post">
+    <form method="post" action="login">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" id="nombre">
 

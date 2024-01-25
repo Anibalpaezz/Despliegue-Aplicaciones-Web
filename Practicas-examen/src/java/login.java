@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -16,47 +12,24 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- *
- * @author apg
- */
 public class login extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet login</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet login at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            response.getWriter().println("<!DOCTYPE html>");
+            response.getWriter().println("<html>");
+            response.getWriter().println("<head>");
+            response.getWriter().println("<title>Servlet login</title>");
+            response.getWriter().println("</head>");
+            response.getWriter().println("<body>");
+            response.getWriter().println("<h1>Servlet login at " + request.getContextPath() + "</h1>");
+            response.getWriter().println("</body>");
+            response.getWriter().println("</html>");
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -72,14 +45,6 @@ public class login extends HttpServlet {
 
     }
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -90,7 +55,6 @@ public class login extends HttpServlet {
             response.sendRedirect("index.html");
             return;
         } else {
-            
 
             String nombre = request.getParameter("nombre");
             String pass = request.getParameter("pass");
@@ -114,30 +78,25 @@ public class login extends HttpServlet {
                 rs = stmt.executeQuery();
 
                 if (rs.next()) {
-                    out.println("<p>Error: Usuario o contraseña correctos.</p>");
-                    response.getWriter().println("Bienvenido");
+                    response.getWriter().println("<p>Usuario o pass correctos.</p>");
+                    response.getWriter().println("Bienveeeenido");
                 } else {
-                    out.println("<p>Error: Usuario o contraseña incorrectos.</p>");
+                    response.getWriter().println("<p>Error: Usuario o pass incorrectos.</p>");
                     response.getWriter().println("NOOOOOO");
-                    out.println(nombre);
-                    out.println(pass);
+                    response.getWriter().println(nombre);
+                    response.getWriter().println(pass);
                 }
             } catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();
-                out.println("Error: " + e.getMessage());
+                response.getWriter().println("Error: " + e.getMessage());
             }
 
         }
     }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }

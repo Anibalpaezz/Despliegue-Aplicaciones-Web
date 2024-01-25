@@ -5,13 +5,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>Examen1</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Iniciar sesion</title>
     </head>
     <body>
-        <div>
-            <form action="compruebaUseradm.jsp" method="post"></form>
-        </div>
+        <h1>Inicio de sesion</h1>
+        <form action="compruebaUseradm.jsp" method="post">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario">
+
+            <label for="pass">Contraseña</label>
+            <input type="text" name="pass" id="pass">
+
+            <button type="submit">Enviar</button>
+        </form>
     </body>
 </html>
