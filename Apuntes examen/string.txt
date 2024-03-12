@@ -1,0 +1,9 @@
+- Declaracion
+    let nombre = "Nico";
+    let nombre = new String("Nico");
+
+- Funciones
+    nombre.toUpperCase(); Convierte a mayus
+    nombre.toLowerCase(); Convierte a minus
+    nombre.includes("Nico"); Busca si esta en la cadena
+    nombre.trim(); Elimina los espacios en blanco innecesarios

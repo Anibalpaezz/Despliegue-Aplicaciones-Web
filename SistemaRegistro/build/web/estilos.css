@@ -1,0 +1,16 @@
+body{
+    background-color: beige;
+    margin:auto;
+    text-align: center;
+}
+
+h2{
+    color: #666600;
+}
+
+form{
+    border:dotted red 1px;
+    width: 25%;
+    padding: 15px;
+    margin: auto;
+}

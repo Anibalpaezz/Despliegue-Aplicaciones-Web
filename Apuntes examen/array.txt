@@ -1,0 +1,10 @@
+- Declaracion
+    let array = new array();
+    let array = [];
+    let array = Array();
+    let array = Array.of();
+
+- Funciones
+    array.push(); Introduce valores al final
+    array.pop(); Elimina valores al final
+    
